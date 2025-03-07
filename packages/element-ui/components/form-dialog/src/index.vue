@@ -43,7 +43,7 @@
 <script>
 import { Dialog, Form, Option, Button, Message } from 'element-ui'
 export default {
-  name: 'form-dialog',
+  name: 'FCR-Form-Dialog',
   components: {
     [Dialog.name]: Dialog,
     [Form.name]: Form,

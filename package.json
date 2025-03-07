@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:el": "pnpm run -C packages/element-ui/build"
+    "build:el": "pnpm run -C packages/element-ui build"
   },
   "keywords": [],
   "author": "",

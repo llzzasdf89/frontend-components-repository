@@ -4,10 +4,9 @@ import * as path from 'path'
 export default defineConfig(() => {
   return {
     plugins: [vuePlugin()],
+    root: './demo',
     build: {
-      rollupOptions: {
-        external: ['elementUi', 'vue'],
-      },
+      outDir: '../dist',
       lib: {
         entry: path.resolve(__dirname, './components/index.js'),
         name: 'FCRElementComponents',

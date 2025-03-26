@@ -1,19 +1,24 @@
 {
-  "name": "@frontend-components-repository/element-ui",
-  "version": "1.0.0",
+  "name": "fcr-element-ui",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/FCR-components.mjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
   },
   "keywords": [],
-  "author": "",
+  "author": "RichardZhiLi",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@vitejs/plugin-vue2": "^2.3.3",
     "element-ui": "^2.15.14",
     "vite": "^6.2.0",
-    "vue": "^2"
+    "vue": "^2",
+    "vue-router": "^3"
   }
 }

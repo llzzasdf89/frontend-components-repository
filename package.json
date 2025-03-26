@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev:el": "pnpm run -C packages/element-ui dev",
     "build:el": "pnpm run -C packages/element-ui build"
   },
   "keywords": [],
-  "author": "",
+  "author": "RichardZhiLi",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.21.0",

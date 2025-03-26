@@ -1,5 +1,6 @@
 <template>
   <el-dialog
+    :visible="visible"
     v-bind="config.dialogConfig"
     @open="handleOpen"
     @close="handleClose"
@@ -35,7 +36,12 @@
     </el-form>
     <template #footer>
       <el-button @click="handleCancel"> 取消 </el-button>
-      <el-button @click="handleConfirm"> 确认 </el-button>
+      <el-button
+        @click="handleConfirm"
+        type="primary"
+      >
+        确认
+      </el-button>
     </template>
   </el-dialog>
 </template>
@@ -45,11 +51,10 @@ import { Dialog, Form, Option, Button, Message } from 'element-ui'
 export default {
   name: 'FCR-Form-Dialog',
   components: {
-    [Dialog.name]: Dialog,
-    [Form.name]: Form,
-    [Option.name]: Option,
-    [Button.name]: Button,
-    [Message.name]: Message,
+    Dialog,
+    Form,
+    Option,
+    Button,
   },
   props: {
     visible: {
@@ -111,25 +116,23 @@ export default {
       }
     },
     handleOpen() {
-      if (Object.toString.call(this.formParams) !== '[object Object]') {
-        return
-      }
       for (let { prop, defaultValue } of this.config.formConfigArray) {
-        if (this.formParams[prop]) {
-          this.form[prop] = this.formParams[prop]
+        if (this.formParams?.[prop]) {
+          this.$set(this.form, prop, this.formParams[prop])
           continue
         }
-        this.form[prop] = defaultValue
+        this.$set(this.form, prop, defaultValue)
       }
     },
     handleClose(event) {
+      this.handleResetFields()
       if (event === 'success') this.$emit('success')
       else this.$emit('close')
-      this.handleResetFields()
       this.$emit('update:visible', false)
     },
     async handleConfirm() {
-      if (typeof this.config.fetchApi) {
+      if (typeof this.config.fetchApi !== 'function') {
+        console.error('fetchApi is not a function, submit error ')
         return
       }
       try {

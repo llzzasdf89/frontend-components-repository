@@ -41,6 +41,9 @@ importers:
       vue:
         specifier: ^2
         version: 2.7.16
+      vue-router:
+        specifier: ^3
+        version: 3.6.5(vue@2.7.16)
 
 packages:
 
@@ -910,6 +913,11 @@ packages:
       yaml:
         optional: true
 
+  vue-router@3.6.5:
+    resolution: {integrity: sha512-VYXZQLtjuvKxxcshuRAwjHnciqZVoXAjTjcqBTz4rKc8qih9g9pI3hbDjmqXaHdgL3v8pV6P8Z335XvHzESxLQ==}
+    peerDependencies:
+      vue: ^2
+
   vue@2.7.16:
     resolution: {integrity: sha512-4gCtFXaAA3zYZdTp5s4Hl2sozuySsgz4jy1EnpBHNfpMa9dK1ZCG7viqBPCwXtmgc8nHqUsAu3G4gtmXkkY3Sw==}
     deprecated: Vue 2 has reached EOL and is no longer actively maintained. See https://v2.vuejs.org/eol/ for more details.
@@ -1685,6 +1693,10 @@ snapshots:
       rollup: 4.34.9
     optionalDependencies:
       fsevents: 2.3.3
+
+  vue-router@3.6.5(vue@2.7.16):
+    dependencies:
+      vue: 2.7.16
 
   vue@2.7.16:
     dependencies:

@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev:el": "pnpm run -C packages/element-ui dev",
-    "build:el": "pnpm run -C packages/element-ui build"
+    "build:el": "pnpm run -C packages/element-ui build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "RichardZhiLi",
@@ -16,6 +19,7 @@
     "eslint-config-prettier": "^10.0.2",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
-    "typescript-eslint": "^8.26.0"
+    "typescript-eslint": "^8.26.0",
+    "vitepress": "^1.6.3"
   }
 }

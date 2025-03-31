@@ -1,6 +1,5 @@
-import FormDialog from './src/index.vue'
-FormDialog.install = function (Vue) {
-  Vue.component(FormDialog.name, FormDialog)
+import FCRFormDialog from './src/index.vue'
+FCRFormDialog.install = function (Vue) {
+  Vue.component(FCRFormDialog.name, FCRFormDialog)
 }
-export const FCRFormDialog = FormDialog
 export default FCRFormDialog

@@ -13,6 +13,9 @@ export default defineConfig(() => {
         fileName: 'FCR-components',
         formats: ['es', 'cjs', 'iife'],
       },
+      rollupOptions: {
+        external: ['vue', 'elementUI'],
+      },
     },
   }
 })

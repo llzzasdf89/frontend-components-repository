@@ -6,17 +6,15 @@
     >
       点击打开弹窗
     </el-button>
-    <FCRFormDialog
+    <FCR-Form-Dialog
       :visible.sync="visible"
       :config="config"
     >
-    </FCRFormDialog>
+    </FCR-Form-Dialog>
   </div>
 </template>
 
 <script>
-import { FCRFormDialog } from '../dist/FCR-components.mjs'
-
 const config = {
   dialogConfig: {
     title: 'demo标题',
@@ -78,9 +76,6 @@ const config = {
 }
 export default {
   name: 'demo-form-table',
-  components: {
-    FCRFormDialog,
-  },
   data() {
     return {
       visible: false,

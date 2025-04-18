@@ -11,6 +11,11 @@ const routes = [
     name: 'demo-form-table-dialog',
     component: () => import('./demo-form-dialog.vue'),
   },
+  {
+    path: '/demo-img-uploader',
+    name: 'demo-img-uploader',
+    component: () => import('./demo-img-uploader.vue'),
+  },
 ]
 export default new VueRouter({
   routes,

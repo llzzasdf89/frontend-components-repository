@@ -2,9 +2,9 @@
   <div>
     首页:
     <ul>
-      <li>
-        <router-link :to="{ name: 'demo-form-table-dialog' }">
-          demo-form-table-dialog
+      <li v-for="name in demoList">
+        <router-link :to="{ name }">
+          {{ name }}
         </router-link>
       </li>
     </ul>
@@ -12,7 +12,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      demoList: ['demo-form-table-dialog', 'demo-img-uploader'],
+    }
+  },
+}
 </script>
 
 <style></style>

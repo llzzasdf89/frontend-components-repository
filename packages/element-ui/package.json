@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/FCR-components.mjs",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build && vite",
     "build": "vite build"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue2": "^2.3.3",
     "element-ui": "^2.15.14",
+    "sass-embedded": "^1.86.3",
     "vite": "^6.2.0",
     "vue": "^2",
     "vue-router": "^3"

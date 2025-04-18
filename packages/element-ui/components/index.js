@@ -1,5 +1,6 @@
 import FCRFormDialog from './form-dialog'
-const components = [FCRFormDialog]
+import imgUploader from './img-uploader'
+const components = [FCRFormDialog, imgUploader]
 const install = function (Vue) {
   components.forEach((component) => {
     Vue.component(component.name, component)

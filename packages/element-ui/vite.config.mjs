@@ -7,6 +7,7 @@ export default defineConfig(() => {
     root: './demo',
     build: {
       outDir: '../dist',
+      emptyOutDir: true,
       lib: {
         entry: path.resolve(__dirname, './components/index.js'),
         name: 'FCRElementComponents',

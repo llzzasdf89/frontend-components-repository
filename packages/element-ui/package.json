@@ -1,11 +1,12 @@
 {
   "name": "fcr-element-ui",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/FCR-components.mjs",
   "scripts": {
     "dev": "vite build && vite",
-    "build": "vite build"
+    "build": "vite build",
+    "publish": "vite build && npm publish"
   },
   "keywords": [],
   "author": "RichardZhiLi",

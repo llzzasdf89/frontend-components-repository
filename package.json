@@ -6,6 +6,7 @@
   "scripts": {
     "dev:el": "pnpm run -C packages/element-ui dev",
     "build:el": "pnpm run -C packages/element-ui build",
+    "publish": "node ./scripts/publish.js",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"

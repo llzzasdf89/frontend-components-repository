@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:pure": "pnpm run -C packages/pure build",
     "dev:el": "pnpm run -C packages/element-ui dev",
     "build:el": "pnpm run -C packages/element-ui build",
     "publish": "node ./scripts/publish.js",

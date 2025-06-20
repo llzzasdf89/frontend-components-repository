@@ -1,2 +1,2 @@
-import formStorageAssistant from './form-storage-assistant'
-export { formStorageAssistant }
+import FormStorageAssistant from './form-storage-assistant'
+export { FormStorageAssistant }

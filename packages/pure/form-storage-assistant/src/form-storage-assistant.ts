@@ -20,7 +20,6 @@ export class FormStorageAssistant {
         this.clearData()
       }
     }
-    this.init()
   }
   saveData() {
     const data = JSON.stringify(this.formData.value)

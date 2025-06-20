@@ -1,6 +1,6 @@
 {
   "name": "fcr-pure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "RichardZhiLi",
   "type": "module",
   "main": "dist/pure.cjs.js",
